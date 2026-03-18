@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ title, description, image, tech }) => {
   return (
-    <div className="bg-dark-300 rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 cursor-pointer">
+    <div className="bg-dark-300 rounded-2xl overflow-hidden hover:-translate-y-3 transition duration-300 cursor-pointer  hover:border-b-3 hover:border-r-2 hover:border-purple">
       <img src={image} alt={title} className="w-full h-60 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -25,7 +25,12 @@ const ProjectCard = ({ title, description, image, tech }) => {
           >
             View Demo
           </a>
-          <a href="#" className="flex-1 text-center px-4 py-2 border border-purple rounded-lg font-medium hover:bg-purple/20 transition duration-300">Code</a>
+          <a
+            href="#"
+            className="flex-1 text-center px-4 py-2 border border-purple rounded-lg font-medium hover:bg-purple/20 transition duration-300"
+          >
+            Code
+          </a>
         </div>
       </div>
     </div>
