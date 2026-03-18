@@ -69,7 +69,7 @@ const About = () => {
                 {aboutInfo.map((data, index) => (
                   <div
                     key={index}
-                    className="bg-dark-300 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-2 cursor-pointer"
+                    className="bg-dark-300 rounded-2xl p-6 transition-transform duration-300 hover:-translate-y-3 cursor-pointer hover:border hover:border-purple"
                   >
                     <div className="text-purple text-4xl mb-4">
                       <data.icon />
