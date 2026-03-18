@@ -1,14 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  FaDribbble,
+  FaDownload,
   FaEnvelope,
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
   FaPhone,
-  FaTwitter,
+ 
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      id="skills"
+      id="contact"
       className="py-20 bg-dark-200"
     >
       <div className="container mx-auto px-6">
@@ -107,28 +108,32 @@ const Contact = () => {
               <h3 className="text-lg font-semibold mb-4">Follow me</h3>
               <div className="flex space-x-4 ">
                 <a
+                title="Github"
                   href="#"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-white hover:bg-purple  hover:text-white  transition duration-300"
                 >
                   <FaGithub />
                 </a>
                 <a
+                title="Linkedin Profile"
                   href="#"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-white hover:bg-blue  hover:text-white  transition duration-300"
                 >
                   <FaLinkedin />
                 </a>
                 <a
+                title="Twitter"
                   href="#"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-blue hover:bg-blue  hover:text-white  transition duration-300"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
                 <a
-                  href="#"
+                title="Download Resume"
+                  href="/src/assets/DeepakGupta- FE Dev.pdf"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-pink hover:bg-pink  hover:text-white  transition duration-300"
                 >
-                  <FaDribbble />
+                  <FaDownload />
                 </a>
               </div>
             </div>

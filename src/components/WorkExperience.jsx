@@ -10,7 +10,7 @@ const WorkExperience = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      id="#work"
+      id="experience"
       className="py-20 bg-dark-200"
     >
       <div className="container mx-auto px-6">
@@ -42,6 +42,16 @@ const WorkExperience = () => {
                   </div>
                   <p className="text-gray-400 mb-2">{data.company}</p>
                   <p className="text-gray-300 mb-2">{data.description}</p>
+                  <div className="flex flex-wrap gap-2 my-4">
+                    {data.techStack?.map((tech, i) => (
+                      <span
+                        key={i}
+                       className="px-3 py-1 bg-dark-400 rounded-full text-sm border border-gray-600"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}

@@ -28,7 +28,7 @@ const About = () => {
               transition={{ duration: 0.9, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.2 }}
               className="w-full h-full object-cover"
-              src={assets.profileImg}
+              src={assets.profileImg2}
               alt="Profile Image"
             />
           </div>
@@ -46,23 +46,29 @@ const About = () => {
               <p className="text-gray-300 mb-6">
                 I'm a passionate{" "}
                 <strong>
-                  Frontend developer with over 5 years of experience
+                  Frontend developer with over 3 years of experience
                 </strong>{" "}
-                creating digital solutions for businesses around the world. My
-                journey started with basic HTML/CSS websites and has evolved
-                into building complex web applications with modern frameworks.
+                building modern, scalable web applications. My journey began
+                with foundational technologies like HTML, CSS, and JavaScript,
+                and has grown into working with advanced frameworks to deliver
+                seamless and engaging user experiences.
               </p>
               <p className="text-gray-300 mb-6">
-                When I'm not coding, you can find me exploring new technologies,
-                contributing to open-source projects, or sharing my knowledge
-                through tech blogs and tutorials. I believe in continuous
-                learning and pushing the boundaries of what's possible on the
-                web.
+                Throughout my career, I’ve focused on creating clean,
+                responsive, and user-centric interfaces that solve real-world
+                business problems. I enjoy turning complex ideas into intuitive
+                digital solutions while maintaining high standards of code
+                quality and performance.
+                <br />
+                <strong>
+                  "I believe in writing clean, maintainable code and creating
+                  intuitive user experiences that make a difference."
+                </strong>
               </p>
-              <p className="text-gray-300 mb-6">
+              {/* <p className="text-gray-300 font-bold mb-6">
                 "I believe in writing clean, maintainable code and creating
                 intuitive user experiences that make a difference."
-              </p>
+              </p> */}
 
               {/* Cards */}
               <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
