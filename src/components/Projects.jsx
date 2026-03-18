@@ -7,9 +7,9 @@ import { FaArrowRight } from "react-icons/fa";
 const Projects = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 1, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
       id="projects"
       className="py-20 bg-dark-200"
@@ -22,7 +22,7 @@ const Projects = () => {
           A selection of my recent work
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-0">
           {/* Project Card */}
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

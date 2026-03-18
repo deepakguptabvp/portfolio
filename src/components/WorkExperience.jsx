@@ -8,7 +8,7 @@ const WorkExperience = () => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
       id="experience"
       className="py-20 bg-dark-200"
@@ -33,8 +33,8 @@ const WorkExperience = () => {
                 <div className="absolute left-[-0.7rem] top-0 w-6 h-6 rounded-full bg-purple"></div>
 
                 {/* box */}
-                <div className="bg-dark-300 rounded-2xl p-6 hover:border-b-3 hover:border-r-2 hover:border-purple">
-                  <div className="flex justify-between items-start mb-2">
+                <div className="flex flex-col bg-dark-300 rounded-2xl p-6 hover:border-b-3 hover:border-r-2 hover:border-purple">
+                  <div className="flex flex-col md:flex-row justify-between items-start mb-4 md:mb-2 space-y-4">
                     <h3 className="text-xl font-semibold">{data.role}</h3>
                     <span className="px-3 py-1 bg-purple/20 text-purple rounded-full text-sm md:text-sm">
                       {data.duration}
@@ -46,7 +46,7 @@ const WorkExperience = () => {
                     {data.techStack?.map((tech, i) => (
                       <span
                         key={i}
-                       className="px-3 py-1 bg-dark-400 rounded-full text-sm border border-gray-600"
+                        className="px-3 py-1 bg-dark-400 rounded-full text-sm border border-gray-600"
                       >
                         {tech}
                       </span>

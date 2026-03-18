@@ -25,6 +25,9 @@ import projectImg3 from "../assets/project3.avif";
 import projectImg4 from "../assets/project4.avif";
 import projectImg5 from "../assets/project5.avif";
 import projectImg6 from "../assets/project6.avif";
+import weatherImg1 from "../assets/weather-1.avif";
+import weatherImg2 from "../assets/weather-2.jpg";
+import weatherImg3 from "../assets/weather-3.jpg";
 
 export const assets = {
   profileImg,
@@ -110,61 +113,60 @@ export const projects = [
   {
     title: "UrbanStayz",
     description:
-      "Discover comfortable and affordable PG accommodations across the city. Your new home is just a search away.",
+      "A modern PG discovery platform enabling users to find affordable accommodations with a clean, responsive UI and optimized browsing experience.",
     image: "https://bookmypg.co.in/assets/front/images/about.png",
-    tech: ["React", "Tailwind CSS", "Html", "JavaScript"],
-    demo: "#",
-    code: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A productivity application with drag-and-drop functionality and real-time updates.",
-    image: projectImg2,
-    tech: ["Vue.js", "Firebase", "Tailwind CSS", "WebSockets"],
-    icons: [FaVuejs, FaFire, FaCloud, FaDatabase],
-    demo: "#",
-    code: "#",
-  },
-  {
-    title: "TuneMasters - Academy",
-    description:
-      "Join our interactive platform to master instruments or vocals with expert courses. Connect with us and start your musical journey today!",
-    image: "https://calarts.edu/sites/default/files/2024-11/music.jpg",
-    tech: ["ReactJs", "NextJs", "Typescript", "Framer motion"],
-    icons: [FaReact, FaDatabase],
-    demo: "https://tune-masters-academy.vercel.app/",
-    code: "https://github.com/deepakguptabvp/TuneMasters-Academy",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
-    image: projectImg4,
-    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
-    icons: [FaReact, FaCloud],
+    tech: ["React.js", "Tailwind CSS", "HTML", "JavaScript"],
     demo: "https://urbanstayz-gray.vercel.app/",
     code: "https://github.com/deepakguptabvp/UrbanStayz-Frontend",
   },
+
+  {
+    title: "TuneMasters - Academy",
+    description:
+      "An interactive music learning platform built with modern UI and smooth animations, delivering an engaging and scalable user experience.",
+    image: "https://calarts.edu/sites/default/files/2024-11/music.jpg",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    demo: "https://tune-masters-academy.vercel.app/",
+    code: "https://github.com/deepakguptabvp/TuneMasters-Academy",
+  },
+
+  {
+    title: "Portfolio Website",
+    description:
+      "A responsive personal portfolio showcasing projects and skills with clean UI, smooth animations, and optimized performance.",
+    image: projectImg4,
+    tech: ["React.js", "Tailwind CSS", "Framer Motion"],
+    demo: "https://portfolio-deepak-gupta.vercel.app/",
+    code: "https://github.com/deepakguptabvp/portfolio",
+  },
+
   {
     title: "Hunting - Coder Blog Website",
     description:
-      "Created a responsive blog website focused on the latest technologies. Features dynamic content updates and an engaging user-friendly design.",
+      "A responsive tech blog platform featuring dynamic content, fast performance, and a user-friendly reading experience.",
     image:
       "https://bloggerspassion.com/wp-content/uploads/2019/12/best-programming-blogs.webp",
-    tech: ["ReactJs", "NextJs", "Tailwind CSS", "Javascript"],
-    icons: [FaReact, FaNodeJs, FaDatabase],
+    tech: ["Next.js", "Tailwind CSS", "JavaScript"],
     demo: "https://huntingcoder-delta.vercel.app/",
     code: "https://github.com/deepakguptabvp/huntingcoder",
   },
+
+  {
+    title: "Task Management App",
+    description:
+      "A productivity app with real-time updates and interactive UI, designed to efficiently manage tasks with a smooth user experience.",
+    image: projectImg2,
+    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
+    demo: "https://todo-listmanagement.vercel.app/",
+    code: "https://github.com/deepakguptabvp/todo-list",
+  },
+
   {
     title: "5-day Weather Forecast App",
     description:
-      "Developed a mobile-responsive 5-day weather forecast app with a sleek UI. Includes temperature switching between Celsius and Fahrenheit for user convenience.",
-    image:
-      "https://www.livemint.com/lm-img/img/2025/05/03/optimize/IRAQ-WEATHER--1_1746282079678_1746282089850.JPG",
-    tech: ["ReactJs", "JavaScript", "NextJs"],
-    icons: [FaRobot, FaReact, FaCloud],
+      "A mobile-responsive weather app providing 5-day forecasts with intuitive UI and seamless temperature unit conversion.",
+    image: weatherImg3,
+    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
     demo: "https://weather-forecast-app-beige.vercel.app/",
     code: "https://github.com/deepakguptabvp/weather-forecast-app",
   },
