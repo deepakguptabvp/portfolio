@@ -80,7 +80,7 @@ const About = () => {
                     <div className="text-purple text-4xl mb-4">
                       <data.icon />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 ">
+                    <h3 className="text-xl font-semibold mb-3 typewriter-white">
                       {data.title}
                     </h3>
                     <h3 className="text-gray-400">{data.description}</h3>

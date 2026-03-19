@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, image, tech, demo, code }) => {
           {tech.map((item, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-dark-400 rounded-full text-sm"
+              className="px-3 py-1 bg-dark-400 rounded-full text-sm border border-gray-600 shadow-white shadow"
             >
               {item}
             </span>

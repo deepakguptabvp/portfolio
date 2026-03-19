@@ -4,30 +4,29 @@ import {
   FaCode,
   FaReact,
   FaServer,
-  FaMobileAlt,
   FaTools,
-  FaNodeJs,
-  FaStripe,
-  FaVuejs,
-  FaFire,
   FaDatabase,
-  FaCloud,
   FaRobot,
   FaRocket,
+  FaDownload,
+  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
+
+import { FaXTwitter } from "react-icons/fa6";
 
 import profileImg from "../assets/profile.jpg";
 import profileImg1 from "../assets/profileImg1.avif";
 import profileImg2 from "../assets/profileImg2.avif";
-import projectImg1 from "../assets/project1.avif";
 import projectImg2 from "../assets/project2.avif";
-import projectImg3 from "../assets/project3.avif";
 import projectImg4 from "../assets/project4.avif";
-import projectImg5 from "../assets/project5.avif";
-import projectImg6 from "../assets/project6.avif";
-import weatherImg1 from "../assets/weather-1.avif";
-import weatherImg2 from "../assets/weather-2.jpg";
 import weatherImg3 from "../assets/weather-3.jpg";
+// import projectImg1 from "../assets/project1.avif";
+// import projectImg3 from "../assets/project3.avif";
+// import projectImg5 from "../assets/project5.avif";
+// import projectImg6 from "../assets/project6.avif";
+// import weatherImg1 from "../assets/weather-1.avif";
+// import weatherImg2 from "../assets/weather-2.jpg";
 
 export const assets = {
   profileImg,
@@ -229,5 +228,28 @@ export const workData = [
       "MongoDb",
       "Typescript",
     ],
+  },
+];
+
+export const mediaLinks = [
+  {
+    title: "GitHub",
+    icon: FaGithub,
+    link: "https://github.com/deepakguptabvp",
+  },
+  {
+    title: "LinkedIn",
+    icon: FaLinkedin,
+    link: "https://www.linkedin.com/in/deepakgupta1597/",
+  },
+  {
+    title: "Twitter",
+    icon: FaXTwitter,
+    link: "https://twitter.com",
+  },
+  {
+    title: "Resume Download",
+    icon: FaDownload,
+    link: "/DeepakGupta- FE Fev.pdf",
   },
 ];
