@@ -22,7 +22,7 @@ const ProjectCard = ({ title, description, image, tech, demo, code }) => {
           ))}
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-auto">
           <a
             href={demo}
             className="flex-1 text-center px-4 py-2 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300"
@@ -31,7 +31,7 @@ const ProjectCard = ({ title, description, image, tech, demo, code }) => {
           </a>
           <a
             href={code}
-            className="flex-1 text-center px-4 py-2 border border-purple rounded-lg font-medium hover:bg-purple/20 transition duration-300"
+            className="flex flex-1 items-center justify-center px-4 py-2 border border-purple rounded-lg font-medium hover:bg-purple/20 transition duration-300"
           >
             Code
           </a>
