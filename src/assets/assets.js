@@ -156,8 +156,8 @@ export const projects = [
       "A productivity app with real-time updates and interactive UI, designed to efficiently manage tasks with a smooth user experience.",
     image: projectImg2,
     tech: ["Next.js", "JavaScript", "Tailwind CSS"],
-    demo: "https://todo-listmanagement.vercel.app/",
-    code: "https://github.com/deepakguptabvp/todo-list",
+    demo: "https://task-management-deepak.vercel.app/",
+    code: "https://github.com/deepakguptabvp/task-management",
   },
 
   {
