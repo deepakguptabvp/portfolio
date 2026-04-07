@@ -4,18 +4,22 @@ import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       id="home"
+      aria-labelledby="hero-heading"
       className="min-h-screen flex items-center  pt-20 pb-16 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]"
     >
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left side div - Content Part */}
         <div className="md:w-1/2 space-y-4 md:mb-0">
-          <h1 className="text-4xl md:text-6xl font-bold md:mb-4">
+          <h1
+            id="hero-heading"
+            className="text-4xl md:text-6xl font-bold md:mb-4"
+          >
             Hi, I'm <span className="text-purple">Deepak Gupta</span>
           </h1>
           <h2 className="text-2xl md:text-4xl font-semibold md:mb-6 typewriter">
@@ -61,7 +65,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

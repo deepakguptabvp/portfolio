@@ -3,16 +3,17 @@ import { motion } from "framer-motion";
 import { aboutInfo, assets } from "../assets/assets";
 const About = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       id="about"
+      aria-labelledby="about-heading"
       className="py-20 bg-dark-200"
     >
       <div className="container mx-0 px-6">
-        <h2 className="text-3xl font-bold text-center mb-4">
+        <h2 id="about-heading" className="text-3xl font-bold text-center mb-4">
           About <span className="text-purple">Me</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
@@ -91,7 +92,7 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

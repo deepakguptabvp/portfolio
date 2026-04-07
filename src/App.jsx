@@ -6,13 +6,13 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <main>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
-    </div>
+    </main>
   );
 };
 

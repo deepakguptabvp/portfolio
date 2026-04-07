@@ -50,6 +50,8 @@ const Contact = () => {
                   Your name
                 </label>
                 <input
+                  id="name"
+                  name="name"
                   type="text"
                   className="w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
@@ -62,6 +64,8 @@ const Contact = () => {
                   Email Address
                 </label>
                 <input
+                  id="email"
+                  name="email"
                   type="email"
                   className="w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
@@ -74,6 +78,8 @@ const Contact = () => {
                   Your Message
                 </label>
                 <textarea
+                  id="message"
+                  name="message"
                   type="text"
                   className="w-full h-40 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none"
                 />
@@ -159,7 +165,7 @@ const Contact = () => {
                 {/* Resume Download Link */}
                 <a
                   title="Download Resume"
-                  href="/src/assets/DeepakGupta- FE Dev.pdf"
+                  href="/src/assets/Deepak-Gupta-Frontend.pdf"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-pink hover:bg-pink  hover:text-white  transition duration-300"
                 >
                   <FaDownload />

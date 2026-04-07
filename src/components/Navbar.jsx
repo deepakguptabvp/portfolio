@@ -7,10 +7,13 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg">
+    <nav
+      className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg"
+      aria-label="Main navigation"
+    >
       <div className=" container mx-auto flex justify-between items-center">
         <div>
-          <a href="#" className="text-3xl font-bold text-white">
+          <a href="#home" className="text-3xl font-bold text-white">
             Deepak
             <span className="text-purple">Gupta</span>
             <div className="w-4 h-4 bg-purple rounded-full"></div>
