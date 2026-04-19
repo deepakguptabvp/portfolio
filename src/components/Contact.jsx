@@ -138,7 +138,7 @@ const Contact = () => {
                 {/* GitHub Link */}
                 <a
                   title="Github"
-                  href="#"
+                  href="https://github.com/deepakguptabvp?tab=repositories"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-white hover:bg-purple  hover:text-white  transition duration-300"
                 >
                   <FaGithub />
@@ -147,7 +147,7 @@ const Contact = () => {
                 {/* LinkedIn Link */}
                 <a
                   title="Linkedin Profile"
-                  href="#"
+                  href="https://www.linkedin.com/in/deepakgupta1597/"
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-white hover:bg-blue  hover:text-white  transition duration-300"
                 >
                   <FaLinkedin />
