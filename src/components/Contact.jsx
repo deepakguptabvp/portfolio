@@ -9,6 +9,7 @@ import {
   FaPhone,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import resume from "../assets/Deepak-Gupta-Frontend.pdf"
 
 /**
  * Contact Component
@@ -165,7 +166,7 @@ const Contact = () => {
                 {/* Resume Download Link */}
                 <a
                   title="Download Resume"
-                  href="/src/assets/Deepak-Gupta-Frontend.pdf"
+                  href={resume}
                   className="w-12 h-12  rounded-full flex items-center justify-center bg-dark-300  text-pink hover:bg-pink  hover:text-white  transition duration-300"
                 >
                   <FaDownload />
