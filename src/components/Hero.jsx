@@ -25,9 +25,14 @@ const Hero = () => {
           <h2 className="text-2xl md:text-4xl font-semibold md:mb-6 typewriter">
             Frontend Developer
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
-            I create stunning web experiences with modern technologies &
-            innovative designs.
+          <p className="text-lg text-gray-300 mb-8 max-w-lg leading-relaxed">
+            Passionate about architecting responsive, fast, and accessible web
+            solutions. Bringing{" "}
+            <span className="text-white font-medium">
+              3+ years of experience
+            </span>{" "}
+            turning complex designs and business requirements into clean,
+            performant code.
           </p>
           <div className="flex space-x-4">
             <a

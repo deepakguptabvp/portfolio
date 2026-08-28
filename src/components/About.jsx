@@ -45,31 +45,21 @@ const About = () => {
             <div className="rounded-2xl p-8">
               <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
               <p className="text-gray-300 mb-6">
-                I'm a passionate{" "}
+                I'm a{" "}
                 <strong>
-                  Frontend developer with over 3 years of experience
+                  Frontend developer with over 3+ years of experience
                 </strong>{" "}
-                building modern, scalable web applications. My journey began
-                with foundational technologies like HTML, CSS, and JavaScript,
-                and has grown into working with advanced frameworks to deliver
-                seamless and engaging user experiences.
+                building scalable, responsive, and business-focused web applications. My expertise lies in React.js, JavaScript, TypeScript, Next.js, Redux Toolkit, Tailwind CSS, and API integration, with a strong focus on developing maintainable and high-performance user interfaces.
               </p>
               <p className="text-gray-300 mb-6">
-                Throughout my career, I’ve focused on creating clean,
-                responsive, and user-centric interfaces that solve real-world
-                business problems. I enjoy turning complex ideas into intuitive
-                digital solutions while maintaining high standards of code
-                quality and performance.
+              Throughout my career, I’ve worked on enterprise-level applications and business solutions, including systems that involve complex workflows, data management, role-based functionality, and API-driven architectures. I enjoy transforming business requirements into intuitive, reliable, and scalable interfaces that improve usability while supporting real-world operational needs.
+                <br />
                 <br />
                 <strong>
                   "I believe in writing clean, maintainable code and creating
                   intuitive user experiences that make a difference."
                 </strong>
               </p>
-              {/* <p className="text-gray-300 font-bold mb-6">
-                "I believe in writing clean, maintainable code and creating
-                intuitive user experiences that make a difference."
-              </p> */}
 
               {/* Cards */}
               <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">

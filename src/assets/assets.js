@@ -13,7 +13,6 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import { FaXTwitter } from "react-icons/fa6";
 
 import profileImg from "../assets/profile.jpg";
 import profileImg1 from "../assets/profileImg1.avif";
@@ -21,6 +20,7 @@ import profileImg2 from "../assets/profileImg2.avif";
 import projectImg2 from "../assets/project2.avif";
 import projectImg4 from "../assets/project4.avif";
 import weatherImg3 from "../assets/weather-3.jpg";
+import { SiGmail } from "react-icons/si";
 // import projectImg1 from "../assets/project1.avif";
 // import projectImg3 from "../assets/project3.avif";
 // import projectImg5 from "../assets/project5.avif";
@@ -71,21 +71,15 @@ export const skills = [
     icon: FaReact,
     description:
       "Building responsive and interactive user interfaces with modern frameworks.",
-    tags: ["JavaScript", "React", "Angular", "TypeScript"],
+    tags: ["HTML5", "CSS3", "JavaScriptES6", "Tailwind CSS", "TypeScript", "React.js", "Next.js"],
   },
   {
-    title: "Backend Development",
-    icon: FaServer,
-    description: "Creating robust server-side applications and RESTful APIs.",
-    tags: ["Node.js", "Express"],
-  },
-  {
-    title: "Database Management",
-    icon: FaDatabase,
-    description:
-      "Designing and optimizing databases for performance and scalability.",
-    tags: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
-  },
+  title: "Backend & Database Development",
+  icon: FaServer,
+  description:
+    "Building RESTful APIs and managing scalable databases for reliable and efficient web applications.",
+  tags: ["Node.js", "Express.js", "MongoDB", "MySQL"],
+},
   // {
   //   title: 'Mobile Development',
   //   icon: FaMobileAlt,
@@ -97,15 +91,22 @@ export const skills = [
     icon: FaRobot,
     description:
       "Leveraging AI tools to boost productivity, automate tasks, and enhance development workflows.",
-    tags: ["ChatGPT", "Claude", "GitHub Copilot", "Cursor"],
+    tags: ["ChatGPT", "Claude", "Antigravity", "Cursor"],
   },
-  {
-    title: "Tools & Technologies",
-    icon: FaTools,
-    description:
-      "Essential tools and technologies I use in my development workflow.",
-    tags: ["Git & GitHub", "Webpack", "Figma", "Jest"],
-  },
+{
+  title: "Development Tools & Workflow",
+  icon: FaTools,
+  description:
+    "Tools and technologies I use to build, manage, test, and deliver scalable web applications.",
+  tags: [
+    "Figma",
+    "Git",
+    "GitHub",
+    "SonarQube",
+    "Azure DevOps",
+    "ESLint",
+  ],
+},
 ];
 
 export const projects = [
@@ -171,27 +172,51 @@ export const projects = [
   },
 ];
 
+
 export const workData = [
+  {
+    role: "Frontend Developer",
+    company: "Cetpa Infotech Pvt. Ltd.",
+    duration: "Apr 2026 - Present",
+    description:
+      "Working on enterprise-level business applications for a government client (DFCCIL), contributing to the development and enhancement of scalable frontend solutions.",
+    techStack: [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "TypeScript",
+      "React.js",
+      "Redux Toolkit",
+      "Zod",
+      "REST APIs",
+      "Axios",
+      "React Hook Form",
+      "SonarQube",
+      "Git",
+      "Azure DevOps",
+    ],
+  },
   {
     role: "Software Engineer - Frontend Developer",
     company: "Big Brand Bucket Pvt. Ltd.",
     duration: "Apr 2024 - Nov 2025",
     description:
-      "Leading frontend development for enterprise clients, implementing modern frameworks, and mentoring junior developers.",
+      "Developed multiple websites for a single client, handling the complete frontend development lifecycle from understanding business requirements to delivering the final product.",
     techStack: [
-      "Html",
+      "HTML",
       "CSS",
       "Tailwind CSS",
-      "Javascript",
-      "Reat.Js",
-      "Next.Js",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Redux",
+      "REST APIs",
+      "Node.js",
+      "Express.js",
       "MongoDB",
       "MySQL",
       "Git",
-      "NodeJs",
-      "ExpressJs",
-      "ChatGpt",
-      "Claude",
       "Framer Motion",
     ],
   },
@@ -200,12 +225,14 @@ export const workData = [
     company: "Cognizant, Noida (Hybrid)",
     duration: "Aug 2023 - Feb 2024",
     description:
-      "Developed and maintained web applications for various clients, focusing on responsive design and performance optimization.",
+      "Developed and maintained web applications using modern frontend technologies, with a focus on responsive UI development, reusable components, API integration, and performance optimization. Worked closely with team members to deliver functional and user-centric solutions aligned with project requirements.",
     techStack: [
-      "Html",
+      "HTML",
       "CSS",
-      "Javascript",
-      "Reat.Js",
+      "JavaScript",
+      "React.js",
+      "Angular",
+      "REST APIs",
       "MongoDB",
       "MySQL",
       "Git",
@@ -217,16 +244,19 @@ export const workData = [
     company: "Cognizant, Noida (Hybrid)",
     duration: "Aug 2022 - Aug 2023",
     description:
-      "Started my career building basic websites and gradually took on more complex projects as I expanded my skill set.",
+      "Started my professional journey by developing web applications and building a strong foundation in frontend and backend technologies. Worked with Angular, TypeScript, Java, and Spring Boot while gaining experience in application development, debugging, database integration, and software development practices.",
     techStack: [
-      "Html",
+      "HTML",
       "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
       "Material UI",
       "Java",
-      "SpringBoot",
-      "Angular",
-      "MongoDb",
-      "Typescript",
+      "Spring Boot",
+      "MongoDB",
+      "MySQL",
+      "Git",
     ],
   },
 ];
@@ -242,14 +272,14 @@ export const mediaLinks = [
     icon: FaLinkedin,
     link: "https://www.linkedin.com/in/deepakgupta1597/",
   },
-  {
-    title: "Twitter",
-    icon: FaXTwitter,
-    link: "https://twitter.com",
-  },
+  // {
+  //   title: "Gmail",
+  //   icon: SiGmail ,
+  //   link: "deepakgupta.150743@gmail.com",
+  // },
   {
     title: "Resume Download",
     icon: FaDownload,
-    link: "/DeepakGupta- FE Fev.pdf",
+    link: "/Deepak-Gupta-Frontend-Developer.pdf",
   },
 ];

@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { workData } from "../assets/assets";
-import { div } from "framer-motion/client";
-
 const WorkExperience = () => {
   return (
     <motion.section
@@ -16,7 +14,7 @@ const WorkExperience = () => {
     >
       <div className="container mx-auto px-6">
         <h2 id="experience-heading" className="text-3xl font-bold text-center mb-4">
-          Professional <span className="text-purple">Experience</span>
+          Professional <span className="text-purple">Experience (3.5 years)</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           My professional journey so far
@@ -35,14 +33,16 @@ const WorkExperience = () => {
 
                 {/* box */}
                 <div className="flex flex-col bg-dark-300 rounded-2xl p-6 hover:border-b-3 hover:border-r-2 hover:border-purple">
-                  <div className="flex flex-col md:flex-row justify-between items-start mb-4 md:mb-2 space-y-4">
-                    <h3 className="text-xl font-semibold">{data.role}</h3>
-                    <span className="px-3 py-1 bg-purple/20 text-purple rounded-full text-sm md:text-sm">
+                  <div className="flex flex-col md:flex-row justify-between items-start gap-2 mb-4">
+                    <div>
+                      <h3 className="text-xl font-semibold">{data.role}</h3>
+                      <p className="text-gray-400 text-sm mt-1">{data.company}</p>
+                    </div>
+                    <span className="px-3 py-1 bg-purple/20 text-purple rounded-full text-sm shrink-0">
                       {data.duration}
                     </span>
                   </div>
-                  <p className="text-gray-400 mb-2">{data.company}</p>
-                  <p className="text-gray-300 mb-2">{data.description}</p>
+                  <p className="text-gray-300 mb-4 leading-relaxed">{data.description}</p>
                   <div className="flex flex-wrap gap-3 my-4">
                     {data.techStack?.map((tech, i) => (
                       <span

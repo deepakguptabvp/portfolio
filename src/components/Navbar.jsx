@@ -12,11 +12,11 @@ const Navbar = () => {
       aria-label="Main navigation"
     >
       <div className=" container mx-auto flex justify-between items-center">
-        <div>
+        <div className="flex flex-row gap-2 justify-center items-center">
+            <div className="w-4 h-4 bg-purple rounded-full"/>
           <a href="#home" className="text-3xl font-bold text-white">
             Deepak
             <span className="text-purple">Gupta</span>
-            <div className="w-4 h-4 bg-purple rounded-full"></div>
           </a>
         </div>
 

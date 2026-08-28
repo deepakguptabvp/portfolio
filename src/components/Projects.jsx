@@ -17,7 +17,7 @@ const Projects = () => {
     >
       <div className="container mx-auto px-6">
         <h2 id="projects-heading" className="text-3xl font-bold text-center mb-4">
-          My <span className="text-purple">Projects</span>
+          My <span className="text-purple">"Personal Projects"</span>
         </h2>
         <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
           A selection of my recent work
