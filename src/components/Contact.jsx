@@ -233,7 +233,7 @@ const Contact = () => {
               className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple to-indigo-600 hover:from-purple-dark hover:to-indigo-700 text-white font-semibold text-sm shadow-md shadow-purple/20 transition-all duration-200 cursor-pointer"
             >
               <FaDownload className="text-sm" />
-              <span>Download Verified Resume</span>
+              <span>Download Resume</span>
             </a>
           </div>
         </div>
