@@ -11,7 +11,7 @@ import {
   FaCheck,
   FaGlobe,
 } from "react-icons/fa";
-import resume from "../assets/Deepak-Gupta-Frontend-Developer.pdf";
+import resume from "../assets/Deepak_Gupta_React_Frontend_Developer.pdf";
 import contactBg from "../assets/contact-bg.jpg";
 
 const Contact = () => {
@@ -40,7 +40,7 @@ const Contact = () => {
       />
 
       {/* Balanced Semi-Transparent Overlay (Midtones between Light & Dark) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-slate-100/90 to-slate-900/20 backdrop-blur-[0.5px] pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-br from-white/20 via-slate-100/90 to-slate-900/20 backdrop-blur-[0.5px] pointer-events-none" />
 
       {/* Ambient Pastel Glow Mesh */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-purple/10 rounded-full blur-3xl pointer-events-none" />
@@ -218,7 +218,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/deepakgupta1597/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all duration-200 font-semibold text-xs sm:text-sm shadow-2xs"
+                className="flex-1 min-w-35 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all duration-200 font-semibold text-xs sm:text-sm shadow-2xs"
               >
                 <FaLinkedin className="text-base" />
                 <span>LinkedIn</span>
@@ -227,10 +227,9 @@ const Contact = () => {
 
             <a
               href={resume}
-              download="Deepak-Gupta-Frontend-Developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-purple to-indigo-600 hover:from-purple-dark hover:to-indigo-700 text-white font-semibold text-sm shadow-md shadow-purple/20 transition-all duration-200 cursor-pointer"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-linear-to-r from-purple to-indigo-600 hover:from-purple-dark hover:to-indigo-700 text-white font-semibold text-sm shadow-md shadow-purple/20 transition-all duration-200 cursor-pointer"
             >
               <FaDownload className="text-sm" />
               <span>Download Resume</span>
