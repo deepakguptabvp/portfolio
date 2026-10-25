@@ -1,23 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { workData } from "../assets/assets";
+
 const WorkExperience = () => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true }}
       id="experience"
       aria-labelledby="experience-heading"
-      className="py-20 bg-dark-200"
+      className="py-24 bg-dark-200 relative overflow-hidden"
     >
       <div className="container mx-auto px-6">
-        <h2 id="experience-heading" className="text-3xl font-bold text-center mb-4">
-          Professional <span className="text-purple">Experience (3.5 years)</span>
+        <h2 id="experience-heading" className="text-3xl md:text-4xl font-extrabold text-slate-900 text-center mb-3">
+          Professional <span className="text-purple">Experience</span>
         </h2>
-        <p className="text-gray-400 text-center max-w-2xl mx-auto mb-16">
-          My professional journey so far
+        <p className="text-slate-600 text-center max-w-2xl mx-auto mb-16 text-sm sm:text-base">
+          3+ years of building enterprise-grade applications, scalable UI systems, and client solutions.
         </p>
 
         <div className="max-w-3xl mx-auto">
@@ -25,29 +26,32 @@ const WorkExperience = () => {
             {workData.map((data, index) => (
               <div
                 key={index}
-                className="relative pl-12 before:content-[''] before:absolute before:left-0
-                        before:top-0 before:w-[2px] before:h-full  before:bg-purple cursor-pointer hover:-translate-y-2 transition-all duration-300 "
+                className="relative pl-10 md:pl-12 before:content-[''] before:absolute before:left-0 before:top-2 before:w-[2px] before:h-full before:bg-purple/30 group"
               >
-                {/* timeline */}
-                <div className="absolute left-[-0.7rem] top-0 w-6 h-6 rounded-full bg-purple"></div>
+                {/* Timeline Dot */}
+                <div className="absolute -left-2.5 top-2 w-5 h-5 rounded-full bg-purple border-4 border-white shadow-md shadow-purple/30 group-hover:scale-125 transition-transform duration-200"></div>
 
-                {/* box */}
-                <div className="flex flex-col bg-dark-300 rounded-2xl p-6 hover:border-b-3 hover:border-r-2 hover:border-purple">
-                  <div className="flex flex-col md:flex-row justify-between items-start gap-2 mb-4">
+                {/* Experience Card */}
+                <div className="bg-white border border-slate-200/90 rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-purple/40 hover:-translate-y-1 transition-all duration-300">
+                  <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-3">
                     <div>
-                      <h3 className="text-xl font-semibold">{data.role}</h3>
-                      <p className="text-gray-400 text-sm mt-1">{data.company}</p>
+                      <h3 className="text-xl font-bold text-slate-900">{data.role}</h3>
+                      <p className="text-purple font-semibold text-sm mt-0.5">{data.company}</p>
                     </div>
-                    <span className="px-3 py-1 bg-purple/20 text-purple rounded-full text-sm shrink-0">
+                    <span className="inline-block self-start sm:self-auto px-3.5 py-1 bg-purple/10 text-purple-dark border border-purple/20 rounded-full text-xs font-bold shrink-0">
                       {data.duration}
                     </span>
                   </div>
-                  <p className="text-gray-300 mb-4 leading-relaxed">{data.description}</p>
-                  <div className="flex flex-wrap gap-3 my-4">
+
+                  <p className="text-slate-600 mb-5 leading-relaxed text-sm sm:text-base">
+                    {data.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
                     {data.techStack?.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-dark-400 rounded-full text-sm border border-gray-600 shadow-white shadow"
+                        className="px-2.5 py-1 bg-slate-100/80 text-slate-700 rounded-md text-xs font-medium border border-slate-200/80 hover:bg-purple-50 hover:text-purple hover:border-purple-200 transition-colors"
                       >
                         {tech}
                       </span>

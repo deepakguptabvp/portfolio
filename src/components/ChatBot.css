@@ -1,12 +1,12 @@
 .pcb-root {
-  /* Change these to match your portfolio's palette */
-  --pcb-accent: #4338ca;
-  --pcb-accent-dark: #362da0;
+  /* Aligned with portfolio purple palette */
+  --pcb-accent: #7c3aed;
+  --pcb-accent-dark: #6d28d9;
   --pcb-bg: #ffffff;
-  --pcb-surface: #f5f5f7;
-  --pcb-text: #1a1a1f;
-  --pcb-text-muted: #6b6b76;
-  --pcb-border: #e4e4e9;
+  --pcb-surface: #f8fafc;
+  --pcb-text: #0f172a;
+  --pcb-text-muted: #64748b;
+  --pcb-border: #e2e8f0;
   --pcb-radius: 16px;
 
   position: fixed;

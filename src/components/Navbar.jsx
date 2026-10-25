@@ -1,4 +1,3 @@
-import { nav } from "framer-motion/client";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
@@ -6,134 +5,80 @@ import { FaXmark } from "react-icons/fa6";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const navLinks = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
     <nav
-      className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg"
+      className="fixed w-full z-50 bg-white/85 backdrop-blur-md border-b border-slate-200/80 py-4 px-6 md:px-8 shadow-xs"
       aria-label="Main navigation"
     >
-      <div className=" container mx-auto flex justify-between items-center">
-        <div className="flex flex-row gap-2 justify-center items-center">
-            <div className="w-4 h-4 bg-purple rounded-full"/>
-          <a href="#home" className="text-3xl font-bold text-white">
-            Deepak
-            <span className="text-purple">Gupta</span>
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Brand Logo */}
+        <div className="flex flex-row gap-2.5 justify-center items-center">
+          <div className="w-3.5 h-3.5 bg-purple rounded-full shadow-sm shadow-purple/50 animate-pulse" />
+          <a href="#home" className="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Deepak<span className="text-purple">Gupta</span>
           </a>
         </div>
 
-        <div className="hidden md:flex space-x-10">
-          <a
-            href="#home"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Home</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-
-          <a
-            href="#about"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>About</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            href="#experience"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Experience</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            href="#skills"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Skills</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            href="#projects"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Projects</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-8 items-center">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="relative text-sm font-semibold text-slate-600 transition-colors duration-200 hover:text-purple group py-1"
+            >
+              <span>{link.name}</span>
+              <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full rounded-full" />
+            </a>
+          ))}
           <a
             href="#contact"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
+            className="px-4 py-2 bg-purple text-white text-sm font-semibold rounded-lg hover:bg-purple-dark shadow-sm hover:shadow-md hover:shadow-purple/20 transition-all duration-200"
           >
-            <span>Contact</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
+            Let's Talk
           </a>
         </div>
 
-        {/* Mobile button */}
+        {/* Mobile Toggle Button */}
         <div className="md:hidden">
-          {showMenu ? (
-            <FaXmark
-              onClick={() => setShowMenu(!showMenu)}
-              className="text-2xl cursor-pointer"
-            />
-          ) : (
-            <FaBars
-              onClick={() => setShowMenu(!showMenu)}
-              className="text-2xl cursor-pointer "
-            />
-          )}
+          <button
+            onClick={() => setShowMenu(!showMenu)}
+            aria-label="Toggle navigation menu"
+            className="p-2 text-slate-700 hover:text-purple focus:outline-none"
+          >
+            {showMenu ? <FaXmark className="text-2xl" /> : <FaBars className="text-2xl" />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Menus */}
+      {/* Mobile Menu Dropdown */}
       {showMenu && (
-        <div className="md:hidden mt-4 bg-dark-300 h-screen rounded-lg p-4 flex flex-col space-y-4 text-center">
+        <div className="md:hidden mt-3 bg-white border border-slate-200 rounded-2xl p-6 shadow-xl flex flex-col space-y-4 text-center animate-in fade-in slide-in-from-top-2 duration-200">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              onClick={() => setShowMenu(false)}
+              href={link.href}
+              className="text-base font-semibold text-slate-700 hover:text-purple py-2 border-b border-slate-100 last:border-none"
+            >
+              {link.name}
+            </a>
+          ))}
           <a
-            onClick={() => setShowMenu(!showMenu)}
-            href="#home"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Home</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-
-          <a
-            onClick={() => setShowMenu(!showMenu)}
-            href="#about"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>About</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            onClick={() => setShowMenu(!showMenu)}
-            href="#skills"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Skills</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            onClick={() => setShowMenu(!showMenu)}
-            href="#projects"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Projects</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            onClick={() => setShowMenu(!showMenu)}
-            href="#experience"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
-          >
-            <span>Experience</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
-          </a>
-          <a
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={() => setShowMenu(false)}
             href="#contact"
-            className="relative text-white/80 transition duration-300 hover:text-purple group"
+            className="w-full py-2.5 bg-purple text-white font-semibold rounded-lg shadow-sm"
           >
-            <span>Contact</span>
-            <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300 group-hover:w-full" />
+            Let's Talk
           </a>
         </div>
       )}
