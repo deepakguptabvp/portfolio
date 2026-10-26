@@ -140,35 +140,35 @@ export const projects = [
     code: "https://github.com/deepakguptabvp/portfolio",
   },
 
-  {
-    title: "Hunting - Coder Blog Website",
-    description:
-      "A responsive tech blog platform featuring dynamic content, fast performance, and a user-friendly reading experience.",
-    image:
-      "https://bloggerspassion.com/wp-content/uploads/2019/12/best-programming-blogs.webp",
-    tech: ["Next.js", "Tailwind CSS", "JavaScript"],
-    demo: "https://huntingcoder-delta.vercel.app/",
-    code: "https://github.com/deepakguptabvp/huntingcoder",
-  },
+  // {
+  //   title: "Hunting - Coder Blog Website",
+  //   description:
+  //     "A responsive tech blog platform featuring dynamic content, fast performance, and a user-friendly reading experience.",
+  //   image:
+  //     "https://bloggerspassion.com/wp-content/uploads/2019/12/best-programming-blogs.webp",
+  //   tech: ["Next.js", "Tailwind CSS", "JavaScript"],
+  //   demo: "https://huntingcoder-delta.vercel.app/",
+  //   code: "https://github.com/deepakguptabvp/huntingcoder",
+  // },
 
   {
-    title: "Task Management App",
+    title: "FocusBoard - Task Management App",
     description:
-      "A productivity app with real-time updates and interactive UI, designed to efficiently manage tasks with a smooth user experience.",
+      "A modern productivity workspace featuring multi-view boards (List & Grid), dynamic subtask checklists with confetti celebrations, priority filters, and persistent task analytics.",
     image: projectImg2,
-    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
-    demo: "https://task-management-deepak.vercel.app/",
-    code: "https://github.com/deepakguptabvp/task-management",
+    tech: ["React.js", "Tailwind CSS", "Vite", "JavaScript"],
+    demo: "https://focus-board-deepak.vercel.app/",
+    code: "https://github.com/deepakguptabvp/focus-board",
   },
 
   {
-    title: "5-day Weather Forecast App",
+    title: "SkyCast - Weather Forecast App",
     description:
-      "A mobile-responsive weather app providing 5-day forecasts with intuitive UI and seamless temperature unit conversion.",
+      "A dynamic weather dashboard featuring 5-day & 24-hr forecasts, live Air Quality Index (AQI), voice search, animated sun-arc tracking, and ambient weather soundscapes.",
     image: weatherImg3,
-    tech: ["Next.js", "JavaScript", "Tailwind CSS"],
-    demo: "https://weather-forecast-app-beige.vercel.app/",
-    code: "https://github.com/deepakguptabvp/weather-forecast-app",
+    tech: ["Next.js", "Tailwind CSS", "OpenWeather API", "Web Audio API"],
+    demo: "https://skycast-app-beige.vercel.app/",
+    code: "https://github.com/deepakguptabvp/skycast-app",
   },
 ];
 
